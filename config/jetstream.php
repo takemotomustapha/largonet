@@ -3,7 +3,6 @@
 use Laravel\Jetstream\Features;
 
 return [
-
     /*
     |--------------------------------------------------------------------------
     | Jetstream Stack
@@ -15,7 +14,7 @@ return [
     |
     */
 
-    'stack' => 'livewire',
+    "stack" => "livewire",
 
     /*
      |--------------------------------------------------------------------------
@@ -28,7 +27,7 @@ return [
      |
      */
 
-    'middleware' => ['web'],
+    "middleware" => ["web"],
 
     /*
     |--------------------------------------------------------------------------
@@ -41,7 +40,7 @@ return [
     |
     */
 
-    'guard' => 'sanctum',
+    "guard" => "sanctum",
 
     /*
     |--------------------------------------------------------------------------
@@ -54,11 +53,11 @@ return [
     |
     */
 
-    'features' => [
+    "features" => [
         // Features::termsAndPrivacyPolicy(),
-         Features::profilePhotos(),
+        Features::profilePhotos(),
         // Features::api(),
-        Features::teams(['invitations' => true]),
+        Features::teams(["invitations" => true]),
         Features::accountDeletion(),
     ],
 
@@ -69,10 +68,9 @@ return [
     |
     | This configuration value determines the default disk that will be used
     | when storing profile photos for your application's users. Typically
-    | this will be the "public" disk but you may adjust this if needed.
+    | this will be the "public" disk, but you may adjust this if needed.
     |
     */
 
-    'profile_photo_disk' => 'public',
-
+    "profile_photo_disk" => "public",
 ];
